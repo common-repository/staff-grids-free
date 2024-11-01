@@ -1,0 +1,64 @@
+#staff_grids::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+#staff_grids .staff_grid {
+	width: 420px;
+	display: inline-block;
+	margin-right: 5px;
+	background: #ddd;
+	padding: 5px;
+}
+
+#staff_grids img.remove {
+	cursor: pointer;
+}
+
+#form_new_staff_grid label, #form_new_member label, .form_edit_member label, .staff_grid form label {
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+}
+
+#form_new_staff_grid input[type=text], #form_new_staff_grid textarea, #form_new_staff_grid select,
+#form_new_member input[type=text], #form_new_member textarea, #form_new_member select,
+.form_edit_member input[type=text], .form_edit_member textarea, .form_edit_member select,
+.staff_grid input[type=text], .staff_grid textarea, .staff_grid select {
+	width: 200px;
+}
+
+#members li {
+	width: 250px;
+	display: inline-block;
+	padding: 5px;
+	margin: 5px 5px 0px 0px;
+	background: #ccc;
+	position: relative;
+	cursor: move;
+}
+
+#members li img.thumbnail {
+	width: 100%;
+	cursor: pointer;
+}
+
+#members li img.loading {
+	display: none;
+}
+
+#members li img.remove {
+	cursor: pointer;
+}
+
+#members li .form_edit_member {
+	padding: 10px;
+	z-index: 100;
+	display: none;
+	position: absolute;
+	top: 295px;
+	left: 0;
+	background: #ccc;
+	width: 240px;
+}

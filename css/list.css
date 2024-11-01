@@ -1,0 +1,112 @@
+.staff_grid_list {
+	height: 500px;
+	overflow: hidden;
+}
+
+.staff_grid_list .current_member {
+	float: left;
+	height: 100%;
+    width: 66%;
+}
+
+.staff_grid_list .current_member h3 {
+	margin: 0;
+}
+
+.staff_grid_list .current_member .photo {
+	float: left;
+	width: 50%;
+	margin-right: 2% !important;
+}
+
+.staff_grid_list .current_member .infos {
+	padding: 2%;
+	height: 100%;
+	overflow: auto;
+}
+
+.staff_grid_list ul {
+	width: 34%;
+	height: 100%;
+	overflow: auto;
+	float: left;
+	margin: 0;
+}
+
+.staff_grid_list ul li {
+	width: 100%;
+	list-style-type: none;
+	padding: 10px;
+	cursor: pointer;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.staff_grid_list ul li::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.staff_grid_list ul li h3 {
+	margin: 0;
+}
+.staff_grid_list ul li div.infos,
+.staff_grid_list ul li img.photo {
+	float: left;
+	opacity: 0.6;
+	transition: all 0.2s linear;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.staff_grid_list ul li div.infos {
+	width: 100%;
+}
+
+.staff_grid_list ul li img.photo {
+	float:left;
+	width: 48%;
+	margin-right: 2% !important;
+}
+
+.staff_grid_list ul li:hover div.infos,
+.staff_grid_list ul li:hover img.photo {
+	opacity: 1;
+}
+
+.staff_grid_list ul li div.photo img.play {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: calc(50% - 32px);
+	opacity: 0.7;
+}
+
+.staff_grid_list ul li p, .staff_grid_list ul li .description {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.staff_grid_list {
+		height: 350px;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.staff_grid_list {
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.staff_grid_list ul li div.infos,
+	.staff_grid_list ul li div.photo {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.staff_grid_list ul li h3 {
+		font-size: 14px !important;
+	}
+}

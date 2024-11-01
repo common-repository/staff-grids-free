@@ -1,0 +1,70 @@
+.staff_grid_grid {
+	width: 100%;
+	position: relative;
+}
+
+.staff_grid_grid .member {
+	width: 44%;
+	min-height: 200px;
+	display: inline-block;
+	position: relative;
+	padding: 2%;
+	margin-left: 2%;
+	margin-top: 30px;
+	background: #ccc;
+	vertical-align: top;
+}
+
+.staff_grid_grid .member .infos {
+	width: 55%;
+	margin-left: 5%;
+	float: left;
+}
+
+.staff_grid_grid .member h3, .staff_grid_grid .member h4 {
+	margin: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.staff_grid_grid .member img.photo {
+	width: 40%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.staff_grid_grid .member .description {
+	margin-top: 10px;
+	width: 100%;
+	font-size: 18px;
+	display: none;
+	overflow: auto;
+	text-overflow: ellipsis;
+	box-sizing: padding-box;
+}
+
+.staff_grid_grid .member .expand {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #fff url(../images/down.png) center center no-repeat;
+	border-radius: 50%;
+	border: 2px solid #555;
+	position: absolute;
+	bottom:-25px;
+	left: calc(50% - 25px);
+	cursor: pointer;
+}
+
+.staff_grid_grid .member .expand.opened {
+	background-image: url(../images/up.png);
+}
+
+@media screen and (max-width: 768px) {
+	.staff_grid_grid .member {
+		width: 100%;
+		margin-left: 0;
+	}
+}

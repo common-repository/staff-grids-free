@@ -1,0 +1,60 @@
+.staff_grid_circle {
+	width: 100%;
+	position: relative;
+}
+
+.staff_grid_circle .member {
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	padding: 3%;
+	box-sizing: border-box;
+	opacity: 0;
+	cursor: pointer;
+	transition: transform 0.1s linear;
+}
+
+.staff_grid_circle .member:hover {
+	transform: scale(1.1);
+}
+
+.staff_grid_circle .member img {
+	max-height: 50%;
+}
+
+.staff_grid_circle .member .infos h3,
+.staff_grid_circle .current_member .infos h3 {
+	margin: 0;
+}
+
+.staff_grid_circle .member .infos p,
+.staff_grid_circle .member .description {
+	display: none;
+}
+
+.staff_grid_circle .current_member {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.staff_grid_circle .current_member .inner {
+	vertical-align: middle;	
+	display: inline-block;
+	line-height: normal;
+	margin: 0 auto;	
+	overflow: auto;
+	padding: 2%;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 640px) {
+	.staff_grid_circle .member .infos h3,
+	.staff_grid_circle .current_member .infos h3 {
+		font-size: 14px;
+	}
+}
